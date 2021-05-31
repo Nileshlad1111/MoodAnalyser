@@ -1,5 +1,7 @@
 package com.bridgelabz;
 
+import com.bridgelabz.exception.MoodAnalysisException;
+import com.bridgelabz.main.MoodAnalyser;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;

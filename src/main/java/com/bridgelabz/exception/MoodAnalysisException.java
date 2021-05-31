@@ -1,10 +1,12 @@
-package com.bridgelabz;
+package com.bridgelabz.exception;
 
 public class MoodAnalysisException extends Throwable {
-    enum exceptionType {
+    public exceptionType type;
+
+    public enum exceptionType {
         ENTERED_EMPTY, ENTERED_NULL
     }
-    exceptionType type;
+    exceptionType getType;
     public MoodAnalysisException(exceptionType type, String message) {
         super(message);
         this.type = type;
